@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+/* General styles
+*/
+
+html {
+  background-color: #f8f8f6;
+  color: #000e29;
+}
+
+/* Layout - Mobile - Small Screens
+*/
+.header {
+  grid-area: header;
+}
+.main-nav{
+  grid-area: main-nav;
+}
+
+.main{
+  grid-area: main;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+html {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    ". nav ."
+    ". main ."
+    "footer footer footer"
+  ;
+}
