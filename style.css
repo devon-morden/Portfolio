@@ -35,6 +35,10 @@ header {
   padding: .25rem;
 }
 
+.current-page {
+  background-color: #92a48e;
+}
+
 /*text*/
 h1 {
   font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
@@ -69,6 +73,14 @@ p {
 
 .nav-items a{
   text-decoration: none;
+}
+
+.nav-items a:link{
+  color: #000e29;
+}
+
+.nav-items a:visited{
+  color: #000e29;
 }
 
 /* Icons */
