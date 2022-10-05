@@ -22,7 +22,8 @@ header {
 }
 
 .main-nav {
-  display: flex
+  display: flex;
+  flex-direction: column;
 }
 
 #content-nav-items li {
