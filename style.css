@@ -21,6 +21,11 @@ header {
   padding: 1rem;
 }
 
+#content-nav-items li {
+  list-style: none;
+  padding: .25rem;
+}
+
 /*text*/
 h1 {
   font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
@@ -50,11 +55,6 @@ p {
 .hamburger-icon {
   width: 1rem;
   height: 1rem;
-}
-
-#content-nav-items li {
-  list-style: none;
-  padding: .25rem;
 }
 
 /* Layout - Mobile - Small Screens
