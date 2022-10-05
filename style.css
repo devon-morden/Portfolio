@@ -82,6 +82,7 @@ body {
 
 #content-nav {
   grid-area: content-nav;
+  padding: .25rem;
 }
 
 #content-nav-items {
@@ -91,6 +92,7 @@ body {
 
 #content {
   grid-area: content;
+  padding: .25rem;
 }
 
 #content-box {
@@ -100,4 +102,5 @@ body {
   grid-template-areas: 
     "content-nav content";
   border: 1px solid #000e29;
+  box-shadow: inset 0px 0px 4px 1px #000e29;
 }
