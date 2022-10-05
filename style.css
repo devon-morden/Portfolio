@@ -83,6 +83,8 @@ body {
 #content-nav {
   grid-area: content-nav;
   padding: .25rem;
+  background-color: #a3b59f;
+  z-index: -1;
 }
 
 #content-nav-items {
