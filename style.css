@@ -26,6 +26,10 @@ header {
   flex-direction: column;
 }
 
+.nav-items li {
+  border-bottom: 2px solid #92a48e;
+}
+
 #content-nav-items li {
   list-style: none;
   padding: .25rem;
@@ -55,6 +59,16 @@ p {
 .subtitle {
   font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
   font-size: 1rem;
+}
+
+.nav-items {
+  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.nav-items a{
+  text-decoration: none;
 }
 
 /* Icons */
