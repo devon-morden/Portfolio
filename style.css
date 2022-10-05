@@ -94,4 +94,5 @@ body {
   grid-template-rows: auto;
   grid-template-areas: 
     "content-nav content";
+  border: 1px solid #000e29;
 }
