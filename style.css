@@ -46,6 +46,14 @@ p {
   font-size: 1rem;
 }
 
+/* Icons */
+.hamburger-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+
+
 /* Layout - Mobile - Small Screens
 */
 header {
