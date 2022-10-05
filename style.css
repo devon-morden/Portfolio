@@ -46,6 +46,11 @@ p {
   font-size: 1rem;
 }
 
+#content-nav-items li {
+  list-style: none;
+  padding: .25rem;
+}
+
 /* Layout - Mobile - Small Screens
 */
 header {
