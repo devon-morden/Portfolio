@@ -145,10 +145,10 @@ body {
 
 #content-box {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-    "content-nav content";
+    "content content-nav";
   border: 1px solid #000e29;
   box-shadow: inset 0px 0px 4px 1px #000e29;
 }
