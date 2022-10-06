@@ -1,5 +1,9 @@
 @import "style.css";
 
+button {
+  all: unset
+}
+
 #content-nav {
   grid-area: content-nav;
   padding: .25rem;
