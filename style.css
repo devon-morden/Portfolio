@@ -142,7 +142,7 @@ body {
   flex-direction: column;
 }
 
-#content {
+#content-text {
   grid-area: content;
   padding: .5rem;
 }
