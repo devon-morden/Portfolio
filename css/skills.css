@@ -31,3 +31,32 @@
   border: 1px solid #000e29;
   box-shadow: inset 0px 0px 4px 1px #000e29;
 }
+
+/*individual articles*/
+#content-directions {
+  display: block;
+}
+
+#content-root-cause-analysis {
+  display: none;
+}
+
+#content-ux-design {
+  display: none;
+}
+
+#content-project-management {
+  display: none;
+}
+
+#content-web-design {
+  display: none;
+}
+
+#content-marketing {
+  display: none;
+}
+
+#content-instructional-design {
+  display: none;
+}
