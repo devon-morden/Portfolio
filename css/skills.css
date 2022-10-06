@@ -1,1 +1,33 @@
-@import "style.css"
+@import "style.css";
+
+#content-nav {
+  grid-area: content-nav;
+  padding: .25rem;
+  background-color: #a3b59f;
+  z-index: -1;
+}
+
+#content-nav-items {
+  display: flex;
+  flex-direction: column;
+}
+
+#content-nav-items li {
+  list-style: none;
+  padding: .25rem;
+}
+
+#content-text {
+  grid-area: content;
+  padding: .5rem;
+}
+
+#content-box {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "content content-nav";
+  border: 1px solid #000e29;
+  box-shadow: inset 0px 0px 4px 1px #000e29;
+}
