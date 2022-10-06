@@ -140,7 +140,7 @@ body {
 
 #content {
   grid-area: content;
-  padding: .25rem;
+  padding: .5rem;
 }
 
 #content-box {
