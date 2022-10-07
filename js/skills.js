@@ -10,3 +10,9 @@ const marketing = document.getElementById('content-marketing');
 
 const instructionalDesign = document.getElementById('content-instructional-design');
 
+const showContent = function(target){
+  target.addEventListener('click', () => {
+    document.getElementsByClassName('content').style.display = none;
+    target.style.display = block;
+  })
+}
