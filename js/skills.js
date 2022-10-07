@@ -12,12 +12,14 @@ const instructionalDesign = document.getElementById('content-instructional-desig
 
 /*shows content when target button is clicked*/
 function showContent(text){
-  if (text.style.display === 'none'){
+    let elements = document.querySelectorAll('.content')
+    elements.forEach((element) => {
+      element.style.display = 'none';
+    })
     text.style.display = 'block';
-  } else {
-    text.style.display = 'none'
   }
-};
+
+
 
 console.log('hello');
 
