@@ -4,6 +4,10 @@ button {
   all: unset
 }
 
+.content{
+  display: block
+}
+
 #content-nav {
   grid-area: content-nav;
   padding: .25rem;
