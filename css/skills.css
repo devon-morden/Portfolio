@@ -1,0 +1,78 @@
+@import "style.css";
+
+button {
+  all: unset
+}
+
+.current-button {
+  background-color: #92a48e;
+}
+
+.content{
+  display: block
+}
+
+#content-nav {
+  grid-area: content-nav;
+  background-color: #a3b59f;
+  margin: 4px;
+}
+
+#content-nav-items {
+  display: flex;
+  flex-direction: column;
+  font-size: .75rem;
+}
+
+#content-nav-items li {
+  list-style: none;
+  cursor: pointer;
+}
+
+#content-nav-items button{
+  padding: .5rem;
+}
+
+#content-text {
+  grid-area: content;
+  padding: .5rem;
+}
+
+#content-box {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "content content-nav";
+  border: 1px solid #000e29;
+  box-shadow: inset 0px 0px 4px 1px #000e29;
+}
+
+/*individual articles*/
+#content-directions {
+  display: block;
+}
+
+#content-root-cause-analysis {
+  display: none;
+}
+
+#content-ux-design {
+  display: none;
+}
+
+#content-project-management {
+  display: none;
+}
+
+#content-web-design {
+  display: none;
+}
+
+#content-marketing {
+  display: none;
+}
+
+#content-instructional-design {
+  display: none;
+}
