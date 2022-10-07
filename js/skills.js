@@ -19,7 +19,3 @@ function showContent(text){
     text.style.display = 'block';
   }
 
-
-
-console.log('hello');
-
