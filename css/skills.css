@@ -10,7 +10,6 @@ button {
 
 #content-nav {
   grid-area: content-nav;
-  padding: .25rem;
   background-color: #a3b59f;
   margin: 4px;
 }
@@ -22,7 +21,11 @@ button {
 
 #content-nav-items li {
   list-style: none;
-  padding: .25rem;
+  cursor: pointer;
+}
+
+#content-nav-items button{
+  padding: .5rem;
 }
 
 #content-text {
