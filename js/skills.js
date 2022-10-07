@@ -1,3 +1,4 @@
+/*initialize variables for each article & button*/
 const rootCauseAnalysis = document.getElementById('content-root-cause-analysis');
 
 const rootCauseAnalysisBtn = document.getElementById('btn-root-cause-analysis');
