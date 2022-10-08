@@ -5,13 +5,14 @@ h2 {
 }
 
 h3 {
-  padding: .5rem;
+  padding-bottom: .5rem;
+  margin-left: .25rem;
 }
 
 .icon {
   width: 1rem;
   height: 1rem;
-
+  margin: .5rem .5rem .5rem .25rem;
 }
 
 summary {
@@ -21,18 +22,7 @@ summary {
   margin: .5rem 0 .5rem 0;
 }
 
-.wrk-exper {
-  background-color: #b3bcd7;
-}
-
-.wrk-exper > summary{
-  border-bottom: 2px solid #a2abc6;
-}
-
-.education {
-  background-color: #b2b2c6;
-}
-
 .summary-text {
-  padding-left: .5rem;
+  width: 100%;
+  padding-left: .25rem;
 }
