@@ -32,8 +32,22 @@ button {
 .project-description {
   width: 75%;
   text-align: center;
+  background-color: #ececeb;
+  color: #000e29;
+  opacity: 90%;
+  box-shadow: 0 0 7px 7px #ececeb;
+  margin: .5rem
+}
+
+.project-description > p {
+  line-height: 1;
 }
 
 .hide {
   display: none;
+}
+
+#FLT-Web-Dev {
+  background-image: url(../assets/flt-project-background.webp);
+  background-size: 100% auto;
 }
