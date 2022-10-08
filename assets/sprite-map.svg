@@ -4,8 +4,8 @@
     <path d="M0 64H448v64H0V64zM0 224H448v64H0V224zM448 384v64H0V384H448z"/></svg>
   </symbol>
 
-  <symbol id="laptop-svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-    <path d="M96 32H64V64 352h64V96H512V352h64V64 32H544 96zM0 384v48l48 48H592l48-48V384H0z"/>
+  <symbol id="code-svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+    <path d="M512 240c0 114.9-114.6 208-256 208c-31.5 0-61.7-4.6-89.6-13.1L16 480 56.9 370.8C21.3 335.1 0 289.6 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208zM217 193l17-17L200 142.1l-17 17-64 64-17 17 17 17 64 64 17 17L233.9 304l-17-17-47-47 47-47zM329 159l-17-17L278.1 176l17 17 47 47-47 47-17 17L312 337.9l17-17 64-64 17-17-17-17-64-64z"/>
   </symbol>
 
   <symbol id="google-svg" viewBox="0 0 488 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
