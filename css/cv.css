@@ -1,12 +1,17 @@
 @import "style.css";
 
+main {
+  padding: 0;
+}
+
 h2 {
-  margin-bottom: 1rem;
+  background-color: #ececeb;
+  padding: 1rem;
 }
 
 h3 {
-  padding-bottom: .5rem;
-  margin-left: .25rem;
+  padding: .5rem;
+  width: 100%;
 }
 
 .icon {
@@ -22,7 +27,27 @@ summary {
   margin: .5rem 0 .5rem 0;
 }
 
+.summary-h3 {
+  margin: 0;
+}
+
 .summary-text {
   width: 100%;
   padding-left: .25rem;
+}
+
+#work-experience {
+  background-color: #b3cbd7;
+}
+
+#work-experience-details-container {
+  background-color: #c4dce8;
+}
+
+#education {
+  background-color: #b2b2c6;
+}
+
+#education-details-container {
+  background-color: #c3c3d7;
 }
