@@ -1,2 +1,8 @@
-@import "style.css"
+@import "style.css";
 
+#project-container {
+  width: 100%;
+  height: 10rem;
+  background-color: #ececeb;
+  box-shadow: 2px 2px 8px 0px #00444f6d;
+}
