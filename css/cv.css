@@ -32,11 +32,15 @@ summary {
 }
 
 #work-experience {
-  background-color: #b3cbd7;
+  /*background-color: #b3cbd7;*/
+  background-color: #b2b2c6;
+  border-bottom: 2px solid #a1a1b5;
 }
 
 #work-experience-details-container {
-  background-color: #c4dce8;
+  /*background-color: #c4dce8;*/
+  background-color: #c3c3d7;
+  padding-left: 1.5rem;
 }
 
 #education {
