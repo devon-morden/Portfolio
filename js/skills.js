@@ -1,6 +1,5 @@
 /*initialize variables for each article & button*/
 const rootCauseAnalysis = document.getElementById('content-root-cause-analysis');
-
 const rootCauseAnalysisBtn = document.getElementById('btn-root-cause-analysis');
 
 const uxDesign = document.getElementById('content-ux-design');
@@ -25,13 +24,13 @@ const buttons = document.querySelectorAll('.button');
 function showContent(element, btn){
   content.forEach((element) => {
     element.style.display = 'none';
-    })
+    });
   buttons.forEach((button) => {
-    button.classList.remove('current-button')
-  })
+    button.classList.remove('current-button');
+  });
   element.style.display = 'block';
   if (element.style.display === 'block') {
-    btn.setAttribute('class', 'current-button')
+    btn.setAttribute('class', 'current-button');
   } 
 };
 
