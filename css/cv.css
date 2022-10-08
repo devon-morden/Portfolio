@@ -5,12 +5,7 @@ main {
 }
 
 h2 {
-  background-color: #ececeb;
-  padding: 1rem;
-}
-
-h3 {
-  padding: .5rem;
+  padding: .75rem;
   width: 100%;
 }
 

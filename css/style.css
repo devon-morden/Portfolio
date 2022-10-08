@@ -12,7 +12,8 @@ html {
   background-color: #f8f8f6;
   color: #000e29;
   font-size: 115%;
-  font-family: goldenbook, times, serif;
+  font-family: goldenbook-regular, times, serif;
+  line-height: 1.5;
 }
 
 header {
