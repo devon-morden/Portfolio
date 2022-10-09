@@ -12,15 +12,16 @@ function nextSlide() {
   //add project-hidden
   //show next section
   for (let project of projects) { 
-    let i=0;
+    let i;
     // var project = projects[i];
     var activeSlide = project.classList.contains('project-visible');
     if (activeSlide) {
-      projects[i+1].classList.add('project-visible');
       project.classList.remove('project-visible');
-      return
+      project.classList.add('project-hidden')
+      projects.item(+1).classList.remove('project-hidden');
+      projects.item(+1).classList.add('project-visible');
     }
-    i ++
+    i++
   };
 }
 
