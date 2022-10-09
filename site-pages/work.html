@@ -45,8 +45,8 @@
   </header>
   <main>
     <div id="project-container">
-      <section class="project hide" id="FLT-Web-Dev">
-        <button type="button">
+      <section class="project" id="FLT-Web-Dev">
+        <button type="button" onclick="prevSlide()" disabled>
           <svg class="chevron">
             <use xlink:href="#left-chevron"/>
           </svg>
@@ -55,15 +55,15 @@
           <h2>Title</h2>
           <p>This is a short description. It is at most three sentences long. Seriously, don't be redundant.</p>
         </div>
-        <button type="button">
+        <button type="button" name="next" onclick="nextSlide()">
           <svg class="chevron">
             <use xlink:href="#right-chevron"/>
           </svg>
         </button>
       </section>
 
-      <section class="project hide" id="Instructional-Design">
-        <button type="button">
+      <section class="project project-hidden" id="Instructional-Design">
+        <button type="button" onclick="prevSlide()">
           <svg class="chevron">
             <use xlink:href="#left-chevron"/>
           </svg>
@@ -72,15 +72,15 @@
           <h2>Title</h2>
           <p>This is a short description. It is at most three sentences long. Seriously, don't be redundant.</p>
         </div>
-        <button type="button">
+        <button type="button" name="next" onclick="nextSlide()">
           <svg class="chevron">
             <use xlink:href="#right-chevron"/>
           </svg>
         </button>
       </section>
 
-      <section class="project hide" id="K12-Diversity">
-        <button type="button">
+      <section class="project project-hidden" id="K12-Diversity">
+        <button type="button" onclick="prevSlide()">
           <svg class="chevron">
             <use xlink:href="#left-chevron"/>
           </svg>
@@ -89,15 +89,15 @@
           <h2>Title</h2>
           <p>This is a short description. It is at most three sentences long. Seriously, don't be redundant.</p>
         </div>
-        <button type="button">
+        <button type="button"  name="next" onclick="nextSlide()">
           <svg class="chevron">
             <use xlink:href="#right-chevron"/>
           </svg>
         </button>
       </section>
 
-      <section class="project hide" id="Latin-Curriculum">
-        <button type="button">
+      <section class="project project-hidden" id="Latin-Curriculum">
+        <button type="button" onclick="prevSlide()">
           <svg class="chevron">
             <use xlink:href="#left-chevron"/>
           </svg>
@@ -106,15 +106,15 @@
           <h2>Title</h2>
           <p>This is a short description. It is at most three sentences long. Seriously, don't be redundant.</p>
         </div>
-        <button type="button">
+        <button type="button" name="next" onclick="nextSlide()">
           <svg class="chevron">
             <use xlink:href="#right-chevron"/>
           </svg>
         </button>
       </section>
 
-      <section class="project " id="Pennsic">
-        <button type="button">
+      <section class="project project-hidden " id="Pennsic">
+        <button type="button" onclick="prevSlide()">
           <svg class="chevron">
             <use xlink:href="#left-chevron"/>
           </svg>
@@ -123,7 +123,7 @@
           <h2>Title</h2>
           <p>This is a short description. It is at most three sentences long. Seriously, don't be redundant.</p>
         </div>
-        <button type="button">
+        <button type="button" name="next" onclick="nextSlide()" disabled>
           <svg class="chevron">
             <use xlink:href="#right-chevron"/>
           </svg>

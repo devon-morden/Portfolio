@@ -15,6 +15,10 @@ button {
   margin: .25rem;
 }
 
+button:disabled {
+  opacity: 0%;
+}
+
 #project-container {
   width: 100%;
   height: 10rem;
@@ -27,6 +31,10 @@ button {
   justify-content: space-between;
   width: 100%;
   height: 100%;
+}
+
+.project-hidden {
+  display: none !important;
 }
 
 .project-description {
@@ -43,9 +51,6 @@ button {
   line-height: 1;
 }
 
-.hide {
-  display: none;
-}
 
 #FLT-Web-Dev {
   background-image: url(../assets/flt-project-background.webp);
