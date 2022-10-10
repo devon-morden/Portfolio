@@ -131,6 +131,10 @@ header {
   grid-area: header;
 }
 
+nav {
+  grid-area: nav;
+}
+
 main{
   grid-area: main;
 }
@@ -145,6 +149,7 @@ body {
   grid-template-rows: auto;
   grid-template-areas: 
     "header"
+    "nav"
     "main"
     "footer";
 }
