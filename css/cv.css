@@ -2,10 +2,11 @@
 
 main {
   padding: 0;
+  margin: 1rem;
+  box-shadow: 2px 2px 8px 0px #00444f6d;
 }
 
 h2 {
-  padding: .75rem;
   width: 100%;
 }
 
@@ -15,38 +16,74 @@ h2 {
   margin: .5rem .5rem .5rem .25rem;
 }
 
-summary {
+.summary-h3 {
+  margin: 0;
+  padding: .5rem 1rem .5rem 1rem;
+  list-style: none;
+}
+
+.inner-summary {
   display: flex;
   align-items: center;
   list-style: none;
   margin: .5rem 0 .5rem 0;
+  padding-left: .5rem;
+  border-bottom: 2px solid #b2b2c6;
 }
 
-.summary-h3 {
-  margin: 0;
-}
-
-.summary-text {
+.inner-summary-text {
   width: 100%;
-  padding-left: .25rem;
+  padding: 0 .25rem;
+}
+
+.content {
+  padding: 0 .5rem 0 2.5rem;
+}
+
+.no-border {
+  border: 0;
+}
+
+#open-pdf {
+  all: unset;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  padding-left: .75rem;
+  padding-top: .25rem;
+  background-color: #ececeb;
+  width: 100%;
 }
 
 #work-experience {
-  /*background-color: #b3cbd7;*/
   background-color: #b2b2c6;
   border-bottom: 2px solid #a1a1b5;
 }
 
 #work-experience-details-container {
-  /*background-color: #c4dce8;*/
   background-color: #c3c3d7;
-  padding-left: 1.5rem;
+  padding-top: .25rem;
 }
 
 #education {
   background-color: #b2b2c6;
+  border-bottom: 2px solid #a1a1b5;
 }
 
 #education-details-container {
   background-color: #c3c3d7;
+  padding-top: .25rem;
+}
+
+a:link {
+  color: #000e29;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000e29;
+  text-decoration: none;
 }
