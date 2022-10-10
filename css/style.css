@@ -20,11 +20,26 @@ header {
   background-color: #a3b59f;
   text-align: left;
   padding: 1rem;
+  box-shadow: 2px 0px 3px 1px #20225ffc;
+}
+
+h1 {
+  border-bottom: 2px solid #92a48e;
 }
 
 .main-nav {
   display: flex;
   flex-direction: column;
+}
+
+.nav-summary {
+  display: flex;
+  align-items: center;
+  padding-top: .5rem;
+}
+
+.nav-summary h2 {
+  padding-left: .75rem;
 }
 
 .main-nav > details > summary {
@@ -33,6 +48,7 @@ header {
 
 .nav-items li {
   border-bottom: 2px solid #92a48e;
+  padding: .25rem 0 .25rem 0;
 }
 
 .current-page {
@@ -90,8 +106,8 @@ h3 {
 
 /* Icons */
 .hamburger-icon {
-  width: 1rem;
-  height: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 /* Layout - Mobile - Small Screens
