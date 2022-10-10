@@ -24,7 +24,12 @@
     <symbol id="right-chevron" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
       <path d="M365.3 256l-22.6 22.6-192 192L128 493.3 82.7 448l22.6-22.6L274.7 256 105.4 86.6 82.7 64 128 18.7l22.6 22.6 192 192L365.3 256z"/>
     </symbol>
+
+    <symbol id="down-chevron" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+      <path d="M256 429.3l22.6-22.6 192-192L493.3 192 448 146.7l-22.6 22.6L256 338.7 86.6 169.4 64 146.7 18.7 192l22.6 22.6 192 192L256 429.3z"/>
+    </symbol>
   </svg>
+  
   <header>
     <h1>Devon Morden</h1>
     <nav class="main-nav">
@@ -43,6 +48,7 @@
       </details>
     </nav>
   </header>
+
   <main>
     <div id="project-container">
       <section class="project project-visible" id="FLT-Web-Dev">
@@ -63,8 +69,15 @@
           </button>
         </div>
         <div class="second-row">
-          <button class="details">Chev</button>
+          <button class="details-btn" type="button" name="details">
+            <svg class="chevron">
+              <use xlink:href="#down-chevron"/>
+            </svg>  
+          </button>
         </div>
+        <article class="details">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam minus saepe eveniet! Doloremque a, molestiae odit, ullam nulla exercitationem iste ad obcaecati, nemo commodi quo nostrum facilis saepe autem.</p>
+        </article>
       </section>
 
       <section class="project project-hidden" id="Instructional-Design">
@@ -85,8 +98,15 @@
           </button>
         </div>
         <div class="second-row">
-          <button>chev</button>
+          <button class="details-btn" type="button" name="details">
+            <svg class="chevron">
+              <use xlink:href="#down-chevron"/>
+            </svg>  
+          </button>
         </div>
+        <article class="details">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam minus saepe eveniet! Doloremque a, molestiae odit, ullam nulla exercitationem iste ad obcaecati, nemo commodi quo nostrum facilis saepe autem.</p>
+        </article>
       </section>
 
       <section class="project project-hidden" id="K12-Diversity">
@@ -107,8 +127,15 @@
           </button>
         </div>
         <div class="second-row">
-          <button>chev</button>
+          <button class="details-btn" type="button" name="details">
+            <svg class="chevron">
+              <use xlink:href="#down-chevron"/>
+            </svg>  
+          </button>
         </div>
+        <article class="details">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam minus saepe eveniet! Doloremque a, molestiae odit, ullam nulla exercitationem iste ad obcaecati, nemo commodi quo nostrum facilis saepe autem.</p>
+        </article>
       </section>
 
       <section class="project project-hidden" id="Latin-Curriculum">
@@ -129,8 +156,15 @@
           </button>
         </div>
         <div class="second-row">
-          <button>chev</button>
+          <button class="details-btn" type="button" name="details">
+            <svg class="chevron">
+              <use xlink:href="#down-chevron"/>
+            </svg>  
+          </button>
         </div>
+        <article class="details">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam minus saepe eveniet! Doloremque a, molestiae odit, ullam nulla exercitationem iste ad obcaecati, nemo commodi quo nostrum facilis saepe autem.</p>
+        </article>
       </section>
 
       <section class="project project-hidden " id="Pennsic">
@@ -151,11 +185,19 @@
           </button>
         </div>
         <div class="second-row">
-          <button>chev</button>
+          <button class="details-btn" type="button" name="details">
+            <svg class="chevron">
+              <use xlink:href="#down-chevron"/>
+            </svg>  
+          </button>
         </div>
+        <article class="details">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam minus saepe eveniet! Doloremque a, molestiae odit, ullam nulla exercitationem iste ad obcaecati, nemo commodi quo nostrum facilis saepe autem.</p>
+        </article>
       </section>
     </div>
   </main>
+
   <footer></footer>
   <script src="/js/work.js"></script>
 </body>
