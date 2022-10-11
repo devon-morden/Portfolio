@@ -1,5 +1,14 @@
 @import "style.css";
 
+body {
+  background-color: #b3cbd7
+}
+
+main {
+  padding-bottom: 700px;
+  height: 80%;
+}
+
 button {
   all: unset
 }
@@ -9,7 +18,12 @@ button {
 }
 
 .content{
-  display: block
+  display: flex;
+  align-self: flex-start;
+}
+
+.nav-items > li {
+  border-bottom: 2px solid #92a48e;
 }
 
 #content-nav {
@@ -21,7 +35,8 @@ button {
 #content-nav-items {
   display: flex;
   flex-direction: column;
-  font-size: .75rem;
+  font-size: .85rem;
+  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
 }
 
 #content-nav-items li {
@@ -46,6 +61,7 @@ button {
     "content content-nav";
   border: 1px solid #000e29;
   box-shadow: inset 0px 0px 4px 1px #000e29;
+  background-color: #ececeb;
 }
 
 /*individual articles*/
@@ -75,4 +91,11 @@ button {
 
 #content-instructional-design {
   display: none;
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+  }
 }

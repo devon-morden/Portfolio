@@ -14,6 +14,7 @@ html {
   font-size: 115%;
   font-family: goldenbook-regular, times, serif;
   line-height: 1.5;
+  height: 100%;
 }
 
 header {
@@ -108,6 +109,18 @@ h3 {
   font-size: 1rem;
 }
 
+details {
+  cursor: pointer;
+}
+
+summary {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
 dt {
   font-weight: bold;
   font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
@@ -166,27 +179,32 @@ footer{
   grid-area: footer;
   display: grid;
   grid-template-areas: 
-    ". contact"
-    "copyright address";
+    "contact ."
+    "address copyright";
   background-color: #ececeb;
+  align-self: end;
+  padding: .25rem 1rem;
+  position: relative;
 }
 
-footer address {
+footer > address {
   grid-area: address;
-  font-size: .9rem;
+  font-size: .65rem;
   line-height: 1.25;
-  text-align: right;
+  text-align: left;
+  font-style: normal;
 }
 
-footer h3 {
+footer > h3 {
   grid-area: contact;
-  font-size: 1rem;
-  text-align: right;
+  font-size: .8rem;
+  text-align: left;
 }
 
-footer p {
+footer > p {
   grid-area: copyright;
-  font-size: .9rem;
+  font-size: .65rem;
+  text-align: right;
   align-self: end;
 }
 
@@ -200,6 +218,7 @@ body {
     "main"
     "fun-facts"
     "footer";
+  height: 100%;
 }
 
 /* Media Queries
@@ -214,10 +233,7 @@ body {
       "fun-facts fun-facts"
       "footer footer";
     grid-template-columns: 1fr 3fr;
-  }
-
-  #main-nav-details {
-    /* padding-left: 1rem; */
+    grid-template-rows: 5rem auto auto 5%;
   }
 
   .hamburger-icon {
@@ -228,7 +244,6 @@ body {
     display: block;
     height: 1rem;
     width: 1rem;
-    justify-self: space-around;
   }
 
   .main-nav-summary {
@@ -258,9 +273,10 @@ body {
       "fun-facts main ."
       "footer footer footer";
     grid-template-columns: 30% 65% 5%;
+    grid-template-rows: 6em 2.5em auto 5%;
   }
 
-  article {
+  #about-me {
     display: grid;
     grid-template-areas: 
       "title portrait"
@@ -290,7 +306,7 @@ body {
 
   .main-nav {
     background-color: #b4c7af;
-    padding-top: .5rem;;
+    padding-top: .5rem;
   }
 
   .main-nav-list {
