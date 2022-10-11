@@ -1,15 +1,5 @@
 @import "style.css";
 
-body {
-  background: linear-gradient(
-    #a3b59f,
-    #b2c6c2,
-    #b3cbd7,
-    #b3bcd7,
-    #b2b2c6
-  );
-}
-
 main {
   padding-bottom: 700px;
   height: 80%;
@@ -103,5 +93,19 @@ button {
   body {
     display: grid;
     grid-template-columns: 20% 60% 20%;
+  }
+
+  #content-box {
+    border: none;
+    background-color: #dbdbda;
+    box-shadow: 10px 10px 10px 1px #0000005f;
+  }
+
+  #content-nav {
+    margin: 0;
+  }
+
+  #content-text {
+    padding: 1.5rem;
   }
 }
