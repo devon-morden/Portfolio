@@ -21,7 +21,8 @@ header {
   background-color: #a3b59f;
   text-align: left;
   /* padding: 1rem; */
-  box-shadow: 2px 0px 3px 1px #20225ffc;
+  /* box-shadow: 2px 0px 3px 1px #20225ffc; */
+  border-bottom: 1px double #92a58e;
   z-index: 1;
 }
 
@@ -33,6 +34,7 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: #b4c7af;
+  box-shadow: 2px 2px 4px 1px #000e29af;
 }
 
 .main-nav-summary {
@@ -82,10 +84,13 @@ aside {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  box-shadow: 2px 2px 4px 1px #000e29af;
+  z-index: -1;
 }
 
 footer {
   padding: 1rem;
+  z-index: -2;
 }
 
 /*text*/
@@ -187,9 +192,11 @@ footer{
   position: relative;
 }
 
-footer > address {
+footer > #contact-methods {
   grid-area: address;
-  font-size: .65rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: .85rem;
   line-height: 1.25;
   text-align: left;
   font-style: normal;
@@ -197,8 +204,9 @@ footer > address {
 
 footer > h3 {
   grid-area: contact;
-  font-size: .8rem;
+  font-size: .9rem;
   text-align: left;
+  padding-bottom: .5rem;
 }
 
 footer > p {
@@ -206,6 +214,10 @@ footer > p {
   font-size: .65rem;
   text-align: right;
   align-self: end;
+}
+
+footer > details {
+  font-size: .85rem;
 }
 
 body {
@@ -236,6 +248,10 @@ body {
     grid-template-rows: 5rem auto auto 5%;
   }
 
+  header {
+    box-shadow: 2px 2px 4px 1px #000e29af;
+  }
+
   .hamburger-icon {
     display: none;
   }
@@ -244,6 +260,10 @@ body {
     display: block;
     height: 1rem;
     width: 1rem;
+  }
+
+  .main-nav {
+    box-shadow: none;
   }
 
   .main-nav-summary {
@@ -261,7 +281,17 @@ body {
   }
 
   aside {
-    text-align: center;
+    text-align: left;
+    margin-bottom: 120px;
+    box-shadow: none;
+  }
+
+  aside > h3 {
+    font-size: 1.25rem;
+  }
+
+  aside > dt {
+    font-size: 1rem;
   }
 }
 
@@ -272,7 +302,7 @@ body {
       "nav nav nav"
       "fun-facts main ."
       "footer footer footer";
-    grid-template-columns: 30% 65% 5%;
+    grid-template-columns: 20% 70% 10%;
     grid-template-rows: 6em 2.5em auto 5%;
   }
 
@@ -282,7 +312,10 @@ body {
       "title portrait"
       "article portrait";
     grid-template-rows: 20% 80%;
-    margin-top: 2.5rem;
+    margin: 2.5rem 1rem 1rem 1rem;
+    background-color: #dbdbda;
+    box-shadow: 10px 10px 10px 1px #0000005f;
+    padding: 1.5rem;
   }
 
   h1 {
@@ -345,10 +378,13 @@ body {
 
   aside {
     text-align: left;
+    margin-bottom: 150px;
   }
 
   aside > dl {
     margin-top: 1rem;
   }
+
+
 
 }

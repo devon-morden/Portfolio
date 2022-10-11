@@ -1,7 +1,13 @@
 @import "style.css";
 
 body {
-  background-color: #b3cbd7
+  background: linear-gradient(
+    #a3b59f,
+    #b2c6c2,
+    #b3cbd7,
+    #b3bcd7,
+    #b2b2c6
+  );
 }
 
 main {
