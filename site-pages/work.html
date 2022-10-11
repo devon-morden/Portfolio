@@ -36,14 +36,17 @@
   </header>
 
   <nav class="main-nav">
-    <details>
-      <summary class="nav-summary">
+    <details id="main-nav-details">
+      <summary class="main-nav-summary">
         <svg class="hamburger-icon">
           <use xlink:href="#hamburger-svg"/>
         </svg>
-        <h2>Examples of Work</h2>
+        <svg class="down-chevron">
+          <use xlink:href="#down-chevron">
+        </svg>
+        <h2>About Me</h2>
       </summary>
-      <ul class="nav-items" id="main-nav-items">
+      <ul class="main-nav-list">
         <li><a href="/index.html"><button type="button">About Me</button></a></li>
         <li><a href="/site-pages/skills.html"><button type="button">Skills</button></a></li>
         <li><a href="/site-pages/CV.html"><button type="button">Curriculum Vitae</button></a></li>
@@ -203,5 +206,6 @@
 
   <footer></footer>
   <script src="/js/work.js"></script>
+  <script src="/js/media-queries.js"></script>
 </body>
 </html>

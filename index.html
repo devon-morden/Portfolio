@@ -16,20 +16,27 @@
     <symbol id="hamburger-svg" viewbox="0 0 448 512">
       <path d="M0 64H448v64H0V64zM0 224H448v64H0V224zM448 384v64H0V384H448z"/>
     </symbol>
+
+    <symbol id="down-chevron" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+      <path d="M256 429.3l22.6-22.6 192-192L493.3 192 448 146.7l-22.6 22.6L256 338.7 86.6 169.4 64 146.7 18.7 192l22.6 22.6 192 192L256 429.3z"/>
+    </symbol>
   </svg>
   <header>
     <h1>Devon Morden</h1>
   </header>
 
   <nav class="main-nav">
-    <details>
-      <summary class="nav-summary">
+    <details id="main-nav-details">
+      <summary class="main-nav-summary">
         <svg class="hamburger-icon">
           <use xlink:href="#hamburger-svg"/>
         </svg>
+        <svg class="down-chevron">
+          <use xlink:href="#down-chevron">
+        </svg>
         <h2>About Me</h2>
       </summary>
-      <ul class="nav-items" id="main-nav-items">
+      <ul class="main-nav-list">
         <li class="current-page"><a href="index.html"><button type="button">About Me</button></a></li>
         <li><a href="/site-pages/skills.html"><button type="button">Skills</button></a></li>
         <li><a href="/site-pages/CV.html"><button type="button">Curriculum Vitae</button></a></li>
@@ -39,9 +46,38 @@
   </nav>
 
   <main>
-    <img id="portrait" src="/assets/portrait.webp">
-    <p>I’m a professional solution-finder - working with individuals and teams to perform root-cause analyses, I help clients identify what their users need and how to address those needs. With experience in education, marketing, web development, and project management, I can assist with a wide variety of company needs. As a pro at wearing multiple hats, I thrive when I can pick up new skills and approach problems with a variety of lenses. As a life-long learner, I am always keen to seek feedback and grow professionally. If these are skills your company values, I can guarantee that we will be long-term partners. Invest in me, and you will reap the benefits for years.</p>
+    <article>
+      <h2 class="title">About Me</h2>
+      <img id="portrait" src="/assets/portrait.webp">
+      <p>I’m a professional solution-finder - working with individuals and teams to perform root-cause analyses, I help clients identify what their users need and how to address those needs. With experience in education, marketing, web development, and project management, I can assist with a wide variety of company needs. As a pro at wearing multiple hats, I thrive when I can pick up new skills and approach problems with a variety of lenses. As a life-long learner, I am always keen to seek feedback and grow professionally. If these are skills your company values, I can guarantee that we will be long-term partners. Invest in me, and you will reap the benefits for years.</p>
+    </article>
   </main>
-  <footer></footer>
+  <aside>
+    <h3>Fun Facts</h3>
+    <dl>
+      <dt>Family</dt>
+      <dd>An excellent husband, Xar'gon the Destroyer (aka my delightfully weird toddler - no idea where he gets it from...), Max (our greyhound whose final race notes read 'not even close', and Granger (named for Hermione because she's too smart for her own good).</dd>
+      <dt>Livestock</dt>
+      <dd>Four sheep: Velvet, Piper, Haleth, and Eowyn (who lives up to her namesake - she is our warrior sheep who takes on the foxes). </br>
+      A llama: Cotton (charged with guarding the flock, whose better judgement can always be overcome by food)</dd>
+      <dt>Hobbies</dt>
+      <dd>Medieval reenactment, hand-sewing, spinning yarn, embroidery, knitting, ancient weaving, researching ancient Roman clothing, Latin, linguistics, and learning everything and anything I can get my hands on.</dd>
+      <dt>Favorite Color</dt>
+      <dd>Green (bet you didn't see that coming!)</dd>
+    </dl>
+  </aside>
+  <footer>
+    <h3>Contact Me</h3>
+    <address>
+      Devon Morden <br/>
+      2156 Bollinger Mill Rd. <br/>
+      Finksburg, MD 21048 <br/>
+      USA <br/>
+      <a href="tel:+17176863663">+1 717.686.3663</a><br/>
+      <a href="mailto:devon.r.morden@gmail.com">Send an e-mail</a>
+    </address>
+    <p>&copy Devon Morden 2022</p>
+  </footer>
+  <script src="/js/media-queries.js"></script>
 </body>
 </html>
