@@ -1,8 +1,7 @@
 @import "style.css";
 
 main {
-  padding-bottom: 700px;
-  height: 80%;
+  margin-bottom: 150px;
 }
 
 button {
@@ -89,6 +88,12 @@ button {
   display: none;
 }
 
+@media (min-width: 600px) {
+  .main-nav {
+    margin-bottom: 150px
+  }
+}
+
 @media (min-width: 1000px) {
   body {
     display: grid;
@@ -99,6 +104,7 @@ button {
     border: none;
     background-color: #dbdbda;
     box-shadow: 10px 10px 10px 1px #0000005f;
+    margin: 1rem 3rem;
   }
 
   #content-nav {
@@ -108,4 +114,31 @@ button {
   #content-text {
     padding: 1.5rem;
   }
+
+  .title {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  #content-nav-items{
+    font-size: 1rem;
+  }
+
+  /* .current-button {
+    padding: .75rem;
+    font-size: 1.25rem;
+    background-color: #92a48e;
+  } */
+
+  #content-directions {
+  text-align: right;
+  font-size: 1.25rem;
+  }
+
+  .content > h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
 }
