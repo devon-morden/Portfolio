@@ -62,6 +62,7 @@ button {
 /*individual articles*/
 #content-directions {
   display: block;
+  font-style: italic;
 }
 
 #content-root-cause-analysis {
