@@ -5,3 +5,10 @@ if (medScrn) {
   document.getElementById('main-nav-details').open = true;
 }
 
+if (medScrn) {
+  document.getElementById('work-experience-details').open = true;
+}
+
+if (medScrn) {
+  document.getElementById('education-details').open = true;
+}

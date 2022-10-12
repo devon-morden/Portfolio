@@ -154,6 +154,18 @@ dt {
   color: #000e29;
 }
 
+a {
+  text-decoration: underline;
+}
+
+a:link {
+  color: #003cb3;
+}
+
+a:visited {
+  color: #875d82;
+}
+
 /* Icons */
 .hamburger-icon {
   width: 1.25rem;
@@ -263,6 +275,7 @@ body {
 
   .main-nav {
     box-shadow: none;
+    margin-bottom: calc(120px + 2rem);
   }
 
   .main-nav-summary {
@@ -350,6 +363,7 @@ body {
     background-color: #b4c7af;
     padding-top: .5rem;
     box-shadow: 2px 2px 4px 1px #000e29af;
+    margin-bottom: 0;
   }
 
   .main-nav-list {
