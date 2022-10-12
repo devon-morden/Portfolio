@@ -40,6 +40,10 @@ h2 {
   background-color: #dbdbda;
 }
 
+.content > p {
+  padding-bottom: 1rem;
+}
+
 .no-border {
   border: 0;
 }

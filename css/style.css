@@ -22,6 +22,7 @@ header {
   text-align: left;
   border-bottom: 1px double #92a58e;
   z-index: 1;
+  height: auto;
 }
 
 h1 {
@@ -33,6 +34,7 @@ h1 {
   flex-direction: column;
   background-color: #b4c7af;
   box-shadow: 2px 2px 4px 1px #000e29af;
+  height: auto;
 }
 
 .main-nav-summary {
@@ -43,6 +45,10 @@ h1 {
 
 .main-nav-summary h2 {
   padding-left: .75rem;
+}
+
+.main-nav-details {
+  height: auto;
 }
 
 .main-nav > details > summary {
