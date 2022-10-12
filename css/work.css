@@ -58,6 +58,11 @@ button:disabled {
   background-color: #ececeb;
   box-shadow: 2px 2px 8px 0px #00444f6d;
   padding: .5rem;
+  text-align: center;
+}
+
+.details > p {
+  margin-bottom: 1rem;
 }
 
 .details-hidden {
@@ -87,6 +92,9 @@ button:disabled {
   margin: 0;
 }
 
+.details > details > summary {
+  list-style: none;
+}
 
 #FLT-Web-Dev {
   background-image: url(../assets/flt-project-background.webp);
@@ -96,6 +104,16 @@ button:disabled {
 #Instructional-Design {
   background-image: url(../assets/instructional-design-background.webp);
   background-size: 100% auto;
+}
+
+#harness-drawing {
+  width: 50%;
+  height: auto;
+}
+
+#HIH-Thumbnails {
+  display: flex;
+  justify-content: space-around;
 }
 
 #K12-Diversity {
@@ -139,6 +157,10 @@ button:disabled {
 
   .project-description > h3 {
     font-size: 2rem;
+  }
+
+  .project-description > p {
+    padding-bottom: .5rem;
   }
 
   .title {
