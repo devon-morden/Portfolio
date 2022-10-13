@@ -84,6 +84,11 @@ button:disabled {
   line-height: 1;
 }
 
+#competitor-comparison {
+  width: 60%;
+  margin: auto;
+}
+
 .details-btn {
   background-color: #ececeb;
   width: 100%;
