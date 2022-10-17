@@ -10,6 +10,10 @@ h2 {
   width: 100%;
 }
 
+dd {
+  font-style: italic;
+}
+
 .icon {
   width: 1rem;
   height: 1rem;

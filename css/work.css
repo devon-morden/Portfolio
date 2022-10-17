@@ -46,7 +46,7 @@ button:disabled {
 .second-row {
   display: flex;
   justify-content: center;
-  opacity: 80%;
+  opacity: 90%;
 }
 
 .third-row {
@@ -84,17 +84,20 @@ button:disabled {
   line-height: 1;
 }
 
-#competitor-comparison {
+#competitor-comparison > img{
   width: 60%;
+  min-width: 300px;
+  max-width: 550px;
   margin: auto;
 }
 
 .details-btn {
-  background-color: #ececeb;
+  background-color: #a3b69f;
   width: 100%;
   border-radius: 0%;
   padding: .15rem;
   margin: 0;
+  cursor: pointer;
 }
 
 .details > details > summary {

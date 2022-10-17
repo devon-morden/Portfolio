@@ -91,7 +91,6 @@ footer {
   align-self: end;
   position: relative;
   padding: .25rem 1rem;
-  z-index: -2;
 }
 
 figure {
