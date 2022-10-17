@@ -6,14 +6,7 @@
 
 /**********Elements**********/
 
-/*Typographical*/
-
-h1 {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
-  font-size: 2rem;
-  padding: 1rem;
-  margin-left: -.20rem;
-}
+/*Typographical, vel sim*/
 
 html {
   background-color: #f8f8f6;
@@ -24,94 +17,16 @@ html {
   height: 100%;
 }
 
-header {
-  background-color: #a3b59f;
-  text-align: left;
-  border-bottom: 1px double #92a58e;
-  z-index: 1;
-  height: auto;
-}
-
-
-
-.main-nav {
-  display: flex;
-  flex-direction: column;
-  background-color: #b4c7af;
-  box-shadow: 2px 2px 4px 1px #000e29af;
-  height: auto;
-}
-
-.main-nav-header-elements {
-  display: flex;
-  align-items: center;
+h1 {
+  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-size: 2rem;
   padding: 1rem;
+  margin-left: -.20rem;
 }
-
-.main-nav-header-elements h2 {
-  padding-left: .75rem;
-}
-
-.main-nav-disclosure-widget {
-  height: auto;
-}
-
-.main-nav > details > summary {
-  list-style: none;
-}
-
-.main-nav-ul li {
-  border-bottom: 2px solid #b4c7af;
-  padding: .25rem 0 .25rem 1rem;
-  background-color: #c5d8bf;
-  width: 100%;
-}
-
-a > button{
-  all: unset;
-  width: 100%;
-}
-
-.current-page {
-  background-color: #b4c7af !important;
-}
-
-main {
-  padding: 1rem;
-}
-
-#portrait {
-  float: right;
-  width: 7rem;
-  height: auto;
-  margin: .5rem;
-}
-
-aside {
-  grid-area: fun-facts;
-  background-color: #b2b2c6;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 2px 2px 4px 1px #000e29af;
-  z-index: -1;
-}
-
-footer {
-  padding: 1rem;
-  z-index: -2;
-}
-
-/*text*/
-
 
 h2 {
   font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
   font-size: 1.25rem
-}
-
-.title {
-  display: none;
 }
 
 h3 {
@@ -125,15 +40,7 @@ h4 {
   padding-bottom: .5rem;
 }
 
-details {
-  cursor: pointer;
-}
-
 summary {
-  cursor: pointer;
-}
-
-button {
   cursor: pointer;
 }
 
@@ -141,30 +48,6 @@ dt {
   font-weight: bold;
   font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
   padding: .5rem .25rem .25rem 0;
-}
-
-.subtitle {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
-  font-size: 1rem;
-}
-
-.main-nav-ul {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
-  font-size: 1rem;
-  list-style: none;
-}
-
-.main-nav-ul a{
-  text-decoration: none;
-
-}
-
-.main-nav-ul a:link{
-  color: #000e29;
-}
-
-.main-nav-ul a:visited{
-  color: #000e29;
 }
 
 a {
@@ -179,11 +62,49 @@ a:visited {
   color: #875d82;
 }
 
+/*Block*/
+
+main {
+  padding: 1rem;
+}
+
+header {
+  background-color: #a3b59f;
+  text-align: left;
+  border-bottom: 1px double #92a58e;
+  z-index: 1;
+  height: auto;
+}
+
+aside {
+  grid-area: fun-facts;
+  background-color: #b2b2c6;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px 1px #000e29af;
+  z-index: -1;
+}
+
+footer {
+  background-color: #ececeb;
+  align-self: end;
+  position: relative;
+  padding: .25rem 1rem;
+  z-index: -2;
+}
+
 figure {
   padding-bottom: .5rem;
 }
 
-/* Icons */
+a > button{
+  all: unset;
+  width: 100%;
+}
+
+/*Icons*/
+
 .hamburger-icon {
   width: 1.25rem;
   height: 1.25rem;
@@ -193,8 +114,21 @@ figure {
   display: none;
 }
 
-/* Layout - Mobile - Small Screens
-*/
+/**********Layout**********/
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "fun-facts"
+    "footer";
+  height: 100%;
+}
+
 header {
   grid-area: header;
 }
@@ -214,11 +148,88 @@ footer{
     "contact"
     "address"
     "copyright";
-  background-color: #ececeb;
-  align-self: end;
-  padding: .25rem 1rem;
-  position: relative;
+
 }
+
+/**********Utilities**********/
+
+.hide {
+  display: none;
+}
+
+.current-page {
+  background-color: #b4c7af !important;
+}
+
+/**********Modifiers**********/
+
+/*Main Navigation*/
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #b4c7af;
+  box-shadow: 2px 2px 4px 1px #000e29af;
+  height: auto;
+}
+
+.main-nav-disclosure-widget {
+  height: auto;
+}
+
+.main-nav-header-elements {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.main-nav-header-elements h2 {
+  padding-left: .75rem;
+}
+
+.main-nav > details > summary {
+  list-style: none;
+}
+
+.main-nav-ul {
+  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.main-nav-ul li {
+  border-bottom: 2px solid #b4c7af;
+  padding: .25rem 0 .25rem 1rem;
+  background-color: #c5d8bf;
+  width: 100%;
+}
+
+.main-nav-ul a{
+  text-decoration: none;
+}
+
+.main-nav-ul a:link{
+  color: #000e29;
+}
+
+.main-nav-ul a:visited{
+  color: #000e29;
+}
+
+/*Main*/
+
+.title {
+  display: none;
+}
+
+#portrait {
+  float: right;
+  width: 7rem;
+  height: auto;
+  margin: .5rem;
+}
+
+/*Footer*/
 
 footer > #contact-methods {
   grid-area: address;
@@ -248,37 +259,37 @@ footer > details {
   font-size: .85rem;
 }
 
-body {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "fun-facts"
-    "footer";
-  height: 100%;
-}
 
-/* Media Queries
-*/
+
+
+
+
+/************* Media Queries****************/
+
+
+
+
+/*Medium Screens*/
 
 @media (min-width: 600px) {
 
-  body {
-    grid-template-areas: 
-      "header header"
-      "nav main"
-      "fun-facts fun-facts"
-      "footer footer";
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 5rem auto auto 5%;
-  }
+  /*****Elements*****/
+
+  /*Typographical, vel sim*/
+
+  /*Block*/
 
   header {
     box-shadow: 2px 2px 4px 1px #000e29af;
   }
+
+  aside {
+    text-align: left;
+    margin-bottom: 120px;
+    box-shadow: none;
+  }
+
+  /*Icons*/
 
   .hamburger-icon {
     display: none;
@@ -290,10 +301,32 @@ body {
     width: 1rem;
   }
 
-  .main-nav {
+  /*****Layout*****/
+
+  body {
+    grid-template-areas: 
+      "header header"
+      "nav main"
+      "fun-facts fun-facts"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 5rem auto auto 5%;
+  }
+  
+  footer {
+    grid-template-areas: 
+    "contact ."
+    "address copyright";
+  }
+
+  /*****Modifiers*****/
+
+  /*Main Navigation*/
+
+  .main-nav {  
     box-shadow: none;
     margin-bottom: calc(120px + 2rem);
-  }
+  } /*I should really change this so slides open & closed horizontally (req. change of icon)*/
 
   .main-nav-header-elements {
     padding: .5rem;
@@ -309,11 +342,7 @@ body {
     display: block;
   }
 
-  aside {
-    text-align: left;
-    margin-bottom: 120px;
-    box-shadow: none;
-  }
+  /*Aside*/
 
   aside > h3 {
     font-size: 1.25rem;
@@ -322,40 +351,16 @@ body {
   aside > dt {
     font-size: 1rem;
   }
-
-  footer {
-    grid-template-areas: 
-    "contact ."
-    "address copyright";
-  }
+  
 }
 
+/*Medium Screens*/
+
 @media (min-width: 1000px) {
-  body {
-    grid-template-areas: 
-      "header header header"
-      "nav nav nav"
-      "fun-facts main ."
-      "footer footer footer";
-    grid-template-columns: 20% 70% 10%;
-    grid-template-rows: 6em 2.5em auto 5%;
-  }
 
-  header {
-    box-shadow: none;
-  }
+  /*****Elements*****/
 
-  #about-me {
-    display: grid;
-    grid-template-areas: 
-      "title portrait"
-      "article portrait";
-    grid-template-rows: 20% 80%;
-    margin: 2.5rem 1rem 1rem 1rem;
-    background-color: #dbdbda;
-    box-shadow: 10px 10px 10px 1px #0000005f;
-    padding: 1.5rem;
-  }
+  /*Typographical, vel sim*/
 
   h1 {
     text-align: center;
@@ -372,9 +377,44 @@ body {
     font-size: 1.25rem;
   }
 
-  article > p {
-    grid-area: article;
+  /*Block*/
+
+  header {
+    box-shadow: none;
   }
+
+  aside {
+    text-align: left;
+    margin-bottom: 150px;
+    box-shadow: 2px 0px 4px 1px #000e29af;
+  }
+
+  a > button {
+    width: auto;
+    background-color: #b4c7af;
+  }
+
+  /*****Layout*****/
+
+  body {
+    grid-template-areas: 
+      "header header header"
+      "nav nav nav"
+      "fun-facts main ."
+      "footer footer footer";
+    grid-template-columns: 20% 70% 10%;
+    grid-template-rows: 6em 2.5em auto 5%;
+  }
+
+  /*****Utilities*****/
+
+  .current-page{
+    background-color: #92a58e;
+  }
+
+  /*****Modifiers*****/
+
+  /*Main Navigation*/
 
   .main-nav {
     background-color: #b4c7af;
@@ -398,17 +438,27 @@ body {
     font-size: 1.25rem;
   }
 
-  a > button {
-    width: auto;
-    background-color: #b4c7af;
-  }
 
   .main-nav-header-elements {
     display: none;
   }
+  
+  /*Main*/
 
-  .current-page{
-    background-color: #92a58e;
+  #about-me {
+    display: grid;
+    grid-template-areas: 
+      "title portrait"
+      "article portrait";
+    grid-template-rows: 20% 80%;
+    margin: 2.5rem 1rem 1rem 1rem;
+    background-color: #dbdbda;
+    box-shadow: 10px 10px 10px 1px #0000005f;
+    padding: 1.5rem;
+  }
+
+  article > p {
+    grid-area: article;
   }
 
   #portrait {
@@ -417,16 +467,10 @@ body {
     height: auto;
   }
 
-  aside {
-    text-align: left;
-    margin-bottom: 150px;
-    box-shadow: 2px 0px 4px 1px #000e29af;
-  }
+  /*Aside*/
 
   aside > dl {
     margin-top: 1rem;
   }
-
-
 
 }
