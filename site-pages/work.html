@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
 <head>
-  <title>Devon Morden | Examples of Work</title>
+  <title>Devon Morden | About Me</title>
   <meta charset="UTF-8">
   <meta name="description" content="Portfolio for Devon Morden">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/work.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://use.typekit.net/ono8rzn.css"><!--Trajan Sans Pro (Regular)-->
   <script src="https://kit.fontawesome.com/bf0626a28c.js" crossorigin="anonymous"></script>
-  <link rel="icon"  href="/assets/favicon.ico">
+  <link rel="icon"  href="/assets/favicon.ico"> <!--I need to fix this - I lost transparency somewhere along the way. I could also just make it a square, but where's the fun and learning in that?-->
 </head>
-
 <body>
   <svg xmlns="http://www.w3.org/200/svg" display="none">
     <symbol id="hamburger-svg" viewbox="0 0 448 512">
@@ -34,18 +31,25 @@
     <h1>Devon Morden</h1>
   </header>
 
-  <nav class="main-nav">
-    <details id="main-nav-details">
-      <summary class="main-nav-summary">
+<!--NavBar-->
+<nav class="main-nav"> <!--I need to add a <noscript> becuase this is hidden on med and small screens when JS is turned off-->
+
+  <!--Disclosure Widget-->
+    <details id="main-nav-disclosure-widget">
+
+    <!--Hamburger Icon & Title or Down Chevron-->
+      <summary class="main-nav-header-elements">
         <svg class="hamburger-icon">
           <use xlink:href="#hamburger-svg"/>
         </svg>
         <svg class="down-chevron">
           <use xlink:href="#down-chevron">
         </svg>
-        <h2>Examples of Work</h2>
+        <h2>About Me</h2>
       </summary>
-      <ul class="main-nav-list">
+
+    <!--Nav Links-->
+      <ul class="main-nav-ul">
         <li><a href="/index.html"><button type="button">About Me</button></a></li>
         <li><a href="/site-pages/skills.html"><button type="button">Skills and Experience</button></a></li>
         <li><a href="/site-pages/CV.html"><button type="button">Curriculum Vitae</button></a></li>
