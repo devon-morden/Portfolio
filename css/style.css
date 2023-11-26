@@ -175,7 +175,7 @@ footer{
 }
 
 .current-page {
-  background-color: #b4c7af !important;
+  text-decoration: underline;
 }
 
 /**********Modifiers**********/
@@ -368,6 +368,10 @@ footer > details {
 
   .title {
     display: block;
+  }
+
+  .current-page {
+    background-color: #b4c7af !important;
   }
 
   /*Aside*/
