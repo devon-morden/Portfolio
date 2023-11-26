@@ -152,13 +152,32 @@ nav {
 
 footer{
   grid-area: footer;
+}
+
+#footer-container {
   display: grid;
   grid-template-areas: 
-    "contact"
-    "address"
-    "copyright";
-
+    "contact-me contact-me"
+    "contact-methods copyright"
+  ;
 }
+
+#contact-me {
+  grid-area: contact-me;
+}
+
+#contact-methods{
+  grid-area: contact-methods;
+}
+
+#copyright {
+  grid-area: copyright;
+  text-align: right;
+  align-self: end;
+  padding-bottom: 0;
+}
+
+
 
 /**********Utilities**********/
 
@@ -250,38 +269,10 @@ footer{
   margin-bottom: 1.5rem;
 }
 
-/*Footer*/
-
-footer > #contact-methods {
-  grid-area: address;
-  display: flex;
-  justify-content: space-around;
-  font-size: .85rem;
-  line-height: 1.25;
-  text-align: left;
-  font-style: normal;
-}
-
-footer > h3 {
-  grid-area: contact;
-  font-size: .9rem;
-  text-align: left;
-  padding-bottom: .5rem;
-}
-
-footer > p {
-  grid-area: copyright;
-  font-size: .65rem;
-  text-align: right;
-  align-self: end;
-}
 
 footer > details {
   font-size: .85rem;
 }
-
-
-
 
 
 
@@ -301,9 +292,6 @@ footer > details {
 
   /*Block*/
 
-  header {
-/*     box-shadow: 2px 2px 4px 1px #000e29af; */
-  }
 
   #subtitle {
     font-size: 1.25rem;
