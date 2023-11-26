@@ -152,7 +152,7 @@ button:disabled {
 @media (min-width: 1000px) {
   
   body {
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 10% 80% 10%;
   }
   
   .project-visible {

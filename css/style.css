@@ -421,8 +421,8 @@ footer > details {
       "nav nav nav"
       "fun-facts main ."
       "footer footer footer";
-    grid-template-columns: 20% 70% 10%;
-    grid-template-rows: 6em 2.5em auto 5%;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 6rem 2.5rem auto 5%;
   }
 
   /*****Utilities*****/
@@ -468,21 +468,22 @@ footer > details {
     display: grid;
     grid-template-areas: 
       "title portrait"
-      "article portrait";
-    grid-template-rows: 20% 80%;
+      "about-me-content portrait";
+    grid-template-rows: 5em auto;
     margin: 2.5rem 1rem 1rem 1rem;
     background-color: #dbdbda;
     box-shadow: 10px 10px 10px 1px #0000005f;
     padding: 1.5rem;
   }
 
-  article > p {
-    grid-area: article;
+  #about-me {
+    grid-area: about-me;
   }
 
   #portrait {
     grid-area: portrait;
     width: 15rem;
+    padding: 1rem;
     height: auto;
   }
 

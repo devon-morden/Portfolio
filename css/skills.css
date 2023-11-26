@@ -55,10 +55,10 @@ button {
 
 #content-box {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: auto;
   grid-template-areas: 
-    "content content-nav";
+    "content-nav content";
   border: 1px solid #000e29;
   box-shadow: inset 0px 0px 4px 1px #000e29;
   background-color: #ececeb;
@@ -103,7 +103,7 @@ button {
 @media (min-width: 1000px) {
   body {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 10% 80% 10%;
   }
 
   .main-nav {
