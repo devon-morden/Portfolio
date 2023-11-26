@@ -20,8 +20,8 @@ html {
 h1 {
   font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
   font-size: 2.25rem;
-  padding: 1rem;
-  margin-left: -.20rem;
+  padding: 1rem 0 .5rem 1rem;
+  margin-left: -.2rem;
 }
 
 h2 {
@@ -81,12 +81,19 @@ main {
 }
 
 header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-width: 0;
   background-color: #a3b59f;
   text-align: left;
   border-bottom: 1px double #92a58e;
   z-index: 1;
   height: auto;
 }
+
 
 aside {
   grid-area: fun-facts;
@@ -227,6 +234,13 @@ footer{
   color: #000e29;
 }
 
+/*Header*/
+
+#subtitle {
+  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  padding: 0 1rem 1rem 1rem;
+}
+
 /*Main*/
 
 .title {
@@ -291,7 +305,11 @@ footer > details {
   /*Block*/
 
   header {
-    box-shadow: 2px 2px 4px 1px #000e29af;
+/*     box-shadow: 2px 2px 4px 1px #000e29af; */
+  }
+
+  #subtitle {
+    font-size: 1.25rem;
   }
 
   aside {
@@ -321,7 +339,7 @@ footer > details {
       "fun-facts fun-facts"
       "footer footer";
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 5rem auto auto 5%;
+    grid-template-rows: auto auto auto 5%;
   }
   
   footer {
@@ -374,7 +392,7 @@ footer > details {
   /*Typographical, vel sim*/
 
   h1 {
-    text-align: center;
+/*     text-align: center; */
     font-size: 3rem;
   }
 
@@ -402,6 +420,10 @@ footer > details {
     box-shadow: none;
   }
 
+  #subtitle {
+    font-size: 1.5rem;
+  }
+
   aside {
     text-align: left;
     margin-bottom: 150px;
@@ -419,11 +441,12 @@ footer > details {
     grid-template-areas: 
       "header header header"
       "nav nav nav"
-      "fun-facts main ."
+      "main main main"
       "footer footer footer";
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 6rem 2.5rem auto 5%;
+    grid-template-rows: auto 2.5rem auto 5%;
   }
+
 
   /*****Utilities*****/
 
@@ -438,23 +461,24 @@ footer > details {
   .main-nav {
     background-color: #b4c7af;
     padding-top: .5rem;
-    box-shadow: 2px 2px 4px 1px #000e29af;
+/*     box-shadow: 2px 2px 4px 1px #000e29af; */
     margin-bottom: 0;
   }
 
   .main-nav-ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-left: 15%;
-    padding-right: 15%;
+/*     justify-content: space-around; */
+    gap: 3rem;
+    padding-left: 1rem;
+/*     padding-right: 15%; */
   }
 
   .main-nav-ul > li {
     padding: 0;
     text-align: center;
     width: auto;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
 
@@ -464,25 +488,29 @@ footer > details {
   
   /*Main*/
 
+  main{
+    margin: 0;
+    padding: 0;
+  }
+
   #about-me {
     display: grid;
     grid-template-areas: 
-      "title portrait"
-      "about-me-content portrait";
+      "portrait title"
+      "portrait about-me-content";
     grid-template-rows: 5em auto;
-    margin: 2.5rem 1rem 1rem 1rem;
+/*     margin: 2.5rem 1rem 1rem 1rem; */
     background-color: #dbdbda;
-    box-shadow: 10px 10px 10px 1px #0000005f;
+/*     box-shadow: 10px 10px 10px 1px #0000005f; */
     padding: 1.5rem;
   }
 
-  #about-me {
-    grid-area: about-me;
-  }
+  
 
   #portrait {
     grid-area: portrait;
-    width: 15rem;
+    width: 25rem;
+    border-radius: 100%;
     padding: 1rem;
     height: auto;
   }
