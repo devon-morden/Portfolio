@@ -141,6 +141,10 @@ nav {
   grid-area: nav;
 }
 
+main {
+  grid-area: main;
+}
+
 #introduction {
   grid-area: main;
   display: grid;
