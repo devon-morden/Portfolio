@@ -142,7 +142,6 @@ body {
     "header"
     "nav"
     "main"
-    "fun-facts"
     "footer";
   height: 100%;
 }
@@ -248,7 +247,7 @@ footer{
 }
 
 #portrait {
-  float: right;
+  text-align: center;
   width: 7rem;
   height: auto;
   margin: .5rem;
