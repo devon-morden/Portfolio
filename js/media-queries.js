@@ -1,20 +1,32 @@
 const medScrnPlus = window.matchMedia('(min-width: 600px)');
-const smScrn = window.matchMedia('(max-width: 559px)');
+const smScrn = window.matchMedia('(max-width: 599px)');
 const mainNavDisclosureWidget = document.getElementById('main-nav-disclosure-widget');
 
-if (smScrn) {
-  mainNavDisclosureWidget.removeAttribute("open","");
+function smScrnChng(e) {
+  if (e.matches) {
+    mainNavDisclosureWidget.removeAttribute("open","true")
+    console.log("That's a match")
+  }
 };
 
-/* function testScreen(media) {
-  if(media.matches) {
-    mainNavDisclosureWidget.removeAttribute("open", "")
-  };
-); */
-/* 
-if (medScrnPlus) {
-  mainNavDisclosureWidget.setAttribute("open", "")
-}; */
+smScrn.addEventListener("change", smScrnChng);
+
+smScrnChng(smScrn);
+
+function medScrnPlusChange(e) {
+  if (e.matches) {
+    mainNavDisclosureWidget.setAttribute("open", "true")
+  }
+};
+
+medScrnPlus.addEventListener("change",medScrnPlusChange);
+
+medScrnPlusChange(medScrnPlus);
+
+
+
+
+
 
 if (medScrnPlus) {
   document.getElementById('work-experience-details').open = true;

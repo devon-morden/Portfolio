@@ -247,6 +247,7 @@ footer{
   border-radius: 100%;
   width: 80%;
   height: auto;
+  margin-bottom: 1.5rem;
 }
 
 /*Footer*/
@@ -286,7 +287,8 @@ footer > details {
 
 /************* Media Queries****************/
 
-
+/*Small Screens*/
+@media (max-width: 599px) {}
 
 
 /*Medium Screens*/
