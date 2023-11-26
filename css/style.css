@@ -141,8 +141,13 @@ nav {
   grid-area: nav;
 }
 
-main{
+#introduction {
   grid-area: main;
+  display: grid;
+  grid-template-areas: 
+    "portrait"
+    "text";
+  justify-items: center;
 }
 
 footer{
@@ -227,19 +232,20 @@ footer{
   color: #000e29;
 }
 
-
-
-
 /*Main*/
 
-.title {
-  text-align: left;
+.introduction-content {
+  text-align: center;
+}
+
+.intro-text {
+  font-size: .9rem;
 }
 
 #portrait {
-  text-align: center;
+  align-content: center;
   border-radius: 100%;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
