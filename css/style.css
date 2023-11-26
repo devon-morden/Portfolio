@@ -12,6 +12,7 @@ html {
   background-color: #f8f8f6;
   color: #000e29;
   font-size: 115%;
+  font-size: min(20px);
   font-family: goldenbook-regular, times, serif;
   line-height: 1.5;
   height: 100%;
@@ -19,8 +20,8 @@ html {
 
 h1 {
   font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
-  font-size: 2.25rem;
-  padding: 1rem 0 .5rem 1rem;
+  font-size: 2rem;
+  padding: 1rem 0 .15rem 1rem;
   margin-left: -.2rem;
 }
 
@@ -76,16 +77,9 @@ a:visited {
 
 /*Block*/
 
-main {
-  padding: 1rem;
-}
-
 header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: flex-start;
+  flex-direction: column;
   min-width: 0;
   background-color: #a3b59f;
   text-align: left;
@@ -94,8 +88,9 @@ header {
   height: auto;
 }
 
-
-
+main {
+  padding: 1rem;
+}
 
 footer {
   background-color: #ececeb;
@@ -172,6 +167,13 @@ footer{
 
 /**********Modifiers**********/
 
+/*Header*/
+
+#subtitle {
+  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  padding: 0 1rem 1rem 1rem;
+}
+
 /*Main Navigation*/
 
 .main-nav {
@@ -191,8 +193,9 @@ footer{
   padding: 1rem;
 }
 
-.main-nav-header-elements h2 {
+.nav-title {
   padding-left: .75rem;
+  font-size: 1.25rem;
 }
 
 .main-nav > details > summary {
@@ -224,23 +227,13 @@ footer{
   color: #000e29;
 }
 
-/*Header*/
 
-#subtitle {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
-  padding: 0 1rem 1rem 1rem;
-}
 
-/*Navigation*/
-
-.nav-title {
-  font-size: 1.25rem;
-}
 
 /*Main*/
 
 .title {
-  text-align: center;
+  text-align: left;
 }
 
 #portrait {
