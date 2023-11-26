@@ -492,11 +492,11 @@ footer > details {
     padding: 0;
   }
 
-  #about-me {
+  #introduction {
     display: grid;
     grid-template-areas: 
       "portrait title"
-      "portrait about-me-content";
+      "portrait introduction-content";
     grid-template-rows: 5em auto;
 /*     margin: 2.5rem 1rem 1rem 1rem; */
     background-color: #dbdbda;
