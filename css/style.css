@@ -95,15 +95,7 @@ header {
 }
 
 
-aside {
-  grid-area: fun-facts;
-  background-color: #b2b2c6;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 2px 2px 4px 1px #000e29af;
-  z-index: -1;
-}
+
 
 footer {
   background-color: #ececeb;
@@ -186,7 +178,6 @@ footer{
   display: flex;
   flex-direction: column;
   background-color: #b4c7af;
-  box-shadow: 2px 2px 4px 1px #000e29af;
   height: auto;
 }
 
@@ -240,17 +231,23 @@ footer{
   padding: 0 1rem 1rem 1rem;
 }
 
+/*Navigation*/
+
+.nav-title {
+  font-size: 1.25rem;
+}
+
 /*Main*/
 
 .title {
-  display: none;
+  text-align: center;
 }
 
 #portrait {
   text-align: center;
-  width: 7rem;
+  border-radius: 100%;
+  width: 100%;
   height: auto;
-  margin: .5rem;
 }
 
 /*Footer*/
@@ -493,7 +490,7 @@ footer > details {
 
   main{
     margin: 0;
-    padding: 0;
+    padding: 1rem;
   }
 
   #introduction {
@@ -502,10 +499,7 @@ footer > details {
       "portrait title"
       "portrait introduction-content";
     grid-template-rows: 5em auto;
-/*     margin: 2.5rem 1rem 1rem 1rem; */
     background-color: #dbdbda;
-/*     box-shadow: 10px 10px 10px 1px #0000005f; */
-    padding: 1.5rem;
   }
 
   

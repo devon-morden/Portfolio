@@ -1,8 +1,9 @@
-const medScrnPlus = window.matchMedia('min-width: 600px');
-const smScrn = window.matchMedia('max-width: 559px')
+const medScrnPlus = window.matchMedia('(min-width: 600px)');
+const smScrn = window.matchMedia('max-width: 559px');
+const mainNavDisclosureWidget = document.querySelector('#main-nav-disclosure-widget');
 
 if (medScrnPlus) {
-  document.getElementById('main-nav-disclosure-widget').open = true;
+  mainNavDisclosureWidget.setAttribute("open", "");
 }
 
 if (medScrnPlus) {
