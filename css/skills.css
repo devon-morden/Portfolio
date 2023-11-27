@@ -1,9 +1,5 @@
 @import "style.css";
 
-main {
-  margin-bottom: 150px;
-}
-
 button {
   all: unset
 }

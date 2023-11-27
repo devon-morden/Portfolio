@@ -140,9 +140,6 @@ button:disabled {
 }
 
 @media (min-width: 600px) {
-  main {
-    margin-bottom: 120px;
-  }
 
   .project-visible {
     grid-template-rows: 13.5rem 1.5rem;
