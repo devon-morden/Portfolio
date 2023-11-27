@@ -17,10 +17,10 @@ button {
   border-bottom: 2px solid #92a48e;
 }
 
-.icon {
+/* .icon {
   width: 1rem;
   height: 1rem;
-}
+} */
 
 #content-nav {
   grid-area: content-nav;
