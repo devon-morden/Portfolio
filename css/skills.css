@@ -55,8 +55,8 @@ button {
   grid-template-rows: auto;
   grid-template-areas: 
     "content-nav content";
-  border: 1px solid #000e29;
-  box-shadow: inset 0px 0px 4px 1px #000e29;
+/*   border: 1px solid #000e29; */
+/*   box-shadow: inset 0px 0px 4px 1px #000e29; */
   background-color: #ececeb;
 }
 
