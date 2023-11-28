@@ -96,7 +96,7 @@ header {
   text-align: left;
   border-bottom: 1px double #92a58e;
   z-index: 1;
-  height: auto;
+  height: fit-content;
 }
 
 main {
@@ -228,7 +228,7 @@ footer{
   display: flex;
   flex-direction: column;
   background-color: #b4c7af;
-  height: auto;
+  height: 100%;
 }
 
 .main-nav-disclosure-widget {
@@ -303,12 +303,12 @@ footer > details {
 /************* Media Queries****************/
 
 /*Small Screens*/
-@media (max-width: 599px) {}
+@media (max-width: 639px) {}
 
 
 /*Medium Screens*/
 
-@media (min-width: 600px) {
+@media (min-width: 640px) {
 
   /*****Elements*****/
 
@@ -341,13 +341,22 @@ footer > details {
       "nav main"
       "footer footer";
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto auto 5%;
+    grid-template-rows: 20% auto 13%;
+  }
+
+  header {
+    height: 100%;
+  }
+
+  main {
+    height: 100%;
   }
   
   footer {
     grid-template-areas: 
     "contact ."
     "address copyright";
+    height: 100%;
   }
 
   #contact-me {
@@ -434,7 +443,7 @@ footer > details {
 
   body {
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 22% 2.5rem auto 5%;
+    grid-template-rows: 25% 2.5rem auto 13%;
     grid-template-areas: 
       "header header header"
       "nav nav nav"

@@ -1,4 +1,4 @@
-const medScrnPlus = window.matchMedia('(min-width: 600px)');
+const medScrnPlus = window.matchMedia('(min-width: 640px)');
 const smScrn = window.matchMedia('(max-width: 599px)');
 const mainNavDisclosureWidget = document.getElementById('main-nav-disclosure-widget');
 
