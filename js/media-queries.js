@@ -1,5 +1,5 @@
-const medScrnPlus = window.matchMedia('(min-width: 600px)');
-const smScrn = window.matchMedia('(max-width: 599px)');
+const medScrnPlus = window.matchMedia('(min-width: 640px)');
+const smScrn = window.matchMedia('(max-width: 639px)');
 const mainNavDisclosureWidget = document.getElementById('main-nav-disclosure-widget');
 
 function smScrnChng(e) {
@@ -27,7 +27,7 @@ medScrnPlusChange(medScrnPlus);
 
 
 
-
+/* 
 if (medScrnPlus) {
   document.getElementById('work-experience-details').open = true;
 };
@@ -35,3 +35,4 @@ if (medScrnPlus) {
 if (medScrnPlus) {
   document.getElementById('education-details').open = true;
 }
+ */
