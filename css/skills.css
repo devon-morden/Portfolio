@@ -1,150 +1,20 @@
 @import "style.css";
 
-button {
-  all: unset
-}
-
-.current-button {
-  background-color: #92a48e;
-}
-
-.content{
-  display: flex;
-  align-self: flex-start;
-}
-
-.nav-items > li {
-  border-bottom: 2px solid #92a48e;
-}
-
-/* .icon {
-  width: 1rem;
-  height: 1rem;
-} */
-
-#content-nav {
-  grid-area: content-nav;
-  background-color: #a3b59f;
-  margin: 4px;
-}
-
-#content-nav-items {
-  display: flex;
-  flex-direction: column;
-  font-size: .85rem;
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
-}
-
-#content-nav-items li {
-  list-style: none;
-  cursor: pointer;
-}
-
-#content-nav-items button{
-  padding: .5rem;
-}
-
-#content-text {
-  grid-area: content;
-  padding: .5rem;
-}
-
-#content-box {
+main {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto;
   grid-template-areas: 
-    "content-nav content";
-/*   border: 1px solid #000e29; */
-/*   box-shadow: inset 0px 0px 4px 1px #000e29; */
-  background-color: #ececeb;
+    "heading"
+    "experience"
+  ;
+  grid-template-rows: 18% auto;
 }
 
-/*individual articles*/
-#content-directions {
-  display: block;
-  font-style: italic;
+h2.larger-screens {
+  grid-area: heading;
+  height: 100%;
 }
 
-#content-root-cause-analysis {
-  display: none;
-}
-
-#content-ux-design {
-  display: none;
-}
-
-#content-project-management {
-  display: none;
-}
-
-#content-web-design {
-  display: none;
-}
-
-#content-marketing {
-  display: none;
-}
-
-#content-instructional-design {
-  display: none;
-}
-
-@media (min-width: 600px) {
-  .main-nav {
-    margin-bottom: 150px
-  }
-}
-
-@media (min-width: 1000px) {
-  body {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-  }
-
-  .main-nav {
-    margin-bottom: 0;
-  }
-
-  #content-box {
-    border: none;
-    background-color: #dbdbda;
-    box-shadow: 10px 10px 10px 1px #0000005f;
-    margin: 1rem 3rem;
-  }
-
-  #content-nav {
-    margin: 0;
-  }
-
-  #content-text {
-    padding: 1.5rem;
-  }
-
-  .title {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 2rem;
-  }
-
-  #content-nav-items{
-    font-size: 1rem;
-  }
-
-  /* .current-button {
-    padding: .75rem;
-    font-size: 1.25rem;
-    background-color: #92a48e;
-  } */
-
-  #content-directions {
-  text-align: right;
-  font-size: 1.25rem;
-  }
-
-  .content > h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
+.experience {
+  grid-area: experience;
+  height: 100%;
 }
