@@ -1,11 +1,7 @@
 @import "style.css";
 
-main {
-  display: grid;
-  grid-template-areas: 
-    "heading"
-    "experience"
-  ;
+.skills-experience-title {
+  display: none;
 }
 
 .experience {
@@ -19,4 +15,25 @@ main {
 .experience-image {
   width: 25%;
   border-radius: 100%;
+}
+
+@media (min-width: 640px){
+  main {
+    display: grid;
+    grid-template-areas: 
+      "heading"
+      "experience"
+    ;
+    justify-items: center;
+  }
+
+  .skills-experience-title {
+    grid-area: heading;
+    display: block;
+    padding: 1rem 0 3rem 0;
+  }
+
+  .experience {
+    grid-area: experience;
+  }
 }
