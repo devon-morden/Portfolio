@@ -13,13 +13,21 @@
 }
 
 .experience-image {
-  width: 15%;
+  width: 10rem;
   border-radius: 100%;
 }
 
+.experience-container{
+  background-color: var(--middle-green);
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  filter: drop-shadow(var(--font-color) 1px 1px 1.5px)
+}
+
 .experience-title {
-  padding: 1rem 0;
   list-style: none;
+  text-align: center;
 }
 
 .up-arrow {
