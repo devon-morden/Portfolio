@@ -9,12 +9,15 @@ main {
   grid-template-rows: 18% auto;
 }
 
-h2.larger-screens {
-  grid-area: heading;
+.experience {
+  grid-area: experience;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
 }
 
-.experience {
-  grid-area: experience;
-  height: 100%;
+.experience-image {
+  width: 25%;
+  border-radius: 100%;
 }
