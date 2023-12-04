@@ -6,7 +6,6 @@ main {
     "heading"
     "experience"
   ;
-  grid-template-rows: 18% auto;
 }
 
 .experience {
