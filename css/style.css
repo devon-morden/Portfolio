@@ -63,6 +63,14 @@ h4 {
   padding-bottom: .5rem;
 }
 
+h5 {
+  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+/*   padding-top: .75rem;
+  padding-bottom: .5rem; */
+}
+
 p{
   padding-bottom: 1rem;
 }
@@ -93,6 +101,14 @@ a:link {
 
 a:visited {
   color: var(--visited-link);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 /*Block*/

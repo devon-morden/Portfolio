@@ -30,6 +30,18 @@
   text-align: center;
 }
 
+.experience-text {
+  padding-left: 2rem;
+}
+
+.experience-text > li {
+  padding-bottom: 1rem;
+}
+
+.experience-text-level-2 {
+  padding-left: 3rem;
+}
+
 .up-arrow {
   margin: 1rem 0 2rem 0;
   height: 4rem;
