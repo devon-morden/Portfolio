@@ -17,6 +17,12 @@
   border-radius: 100%;
 }
 
+.up-arrow {
+  margin: 1rem 0 2rem 0;
+  height: 4rem;
+  width: auto;
+}
+
 @media (min-width: 640px){
   main {
     display: grid;
