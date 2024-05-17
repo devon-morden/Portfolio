@@ -11,6 +11,15 @@
   --nav: nav;
   --main: main;
   --footer: footer;
+  --font-color: #000e29;
+  --background-color: #f8f8f6;
+  --unvisited-link: #003cb3;
+  --visited-link: #875d82;
+  --dark-green: #a3b59f;
+  --middle-green: #b4c7af;
+  --light-green: #c5d8bf;
+  --main-background: #dbdbda;
+  --footer-background: #ececeb;
 }
 
 
@@ -20,38 +29,46 @@
 /*Typographical, vel sim*/
 
 html {
-  background-color: #f8f8f6;
-  color: #000e29;
+  background-color: var(--background-color);
+  color: var(font-color);
   font-size: 115%;
   font-size: min(20px);
-  font-family: goldenbook-regular, times, serif;
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
   line-height: 1.5;
   height: 100%;
 }
 
 h1 {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-family: "Marcellus SC", "Trebuchet MS", Verdana, sans-serif;
   font-size: 2rem;
   padding: 1rem 0 .15rem 1rem;
   margin-left: -.2rem;
 }
 
 h2 {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-family: "Marcellus SC", "Trebuchet MS", Verdana, sans-serif;
   font-size: 1.5rem
 }
 
 h3 {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-family: "Marcellus SC", "Trebuchet MS", Verdana, sans-serif;
   font-size: 1.25rem;
 }
 
 h4 {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-family: "Marcellus SC", "Trebuchet MS", Verdana, sans-serif;
   font-weight: medium;
   font-size: 1rem;
   padding-top: .75rem;
   padding-bottom: .5rem;
+}
+
+h5 {
+  font-family: "Marcellus SC", "Trebuchet MS", Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+/*   padding-top: .75rem;
+  padding-bottom: .5rem; */
 }
 
 p{
@@ -63,7 +80,7 @@ summary {
 }
 
 dt {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-family: "Marcellus SC", "Trebuchet MS", Verdana, sans-serif;
   font-size: 1rem;
   padding: .5rem .25rem .25rem 0;
 }
@@ -79,11 +96,19 @@ a {
 }
 
 a:link {
-  color: #003cb3;
+  color: var(--unvisited-link);
 }
 
 a:visited {
-  color: #875d82;
+  color: var(--visited-link);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 /*Block*/
@@ -92,7 +117,7 @@ header {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  background-color: #a3b59f;
+  background-color: var(--dark-green);
   text-align: left;
   border-bottom: 1px double #92a58e;
   z-index: 1;
@@ -101,11 +126,11 @@ header {
 
 main {
   padding: 1rem 1rem 0 1rem;
-  background-color: #dbdbda;
+  background-color: var(--main-background);
 }
 
 footer {
-  background-color: #ececeb;
+  background-color: var(--footer-background);
   align-self: end;
   position: relative;
   padding: .25rem 1rem;
@@ -221,7 +246,7 @@ footer{
 /*Header*/
 
 #subtitle {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-family: "Marcellus SC", "Trebuchet MS", Verdana, sans-serif;
   padding: 0 1rem 1rem 1rem;
 }
 
@@ -230,7 +255,7 @@ footer{
 .main-nav {
   display: flex;
   flex-direction: column;
-  background-color: #b4c7af;
+  background-color: var(--middle-green);
   height: 100%;
 }
 
@@ -254,7 +279,7 @@ footer{
 }
 
 .main-nav-ul {
-  font-family: trajan-sans-pro, "Trebuchet MS", Verdana, sans-serif;
+  font-family: "Marcellus SC", "Trebuchet MS", Verdana, sans-serif;
   font-size: 1rem;
   list-style: none;
 }
@@ -262,7 +287,7 @@ footer{
 .main-nav-ul li {
   border-bottom: 2px solid #b4c7af;
   padding: .25rem 0 .25rem 1rem;
-  background-color: #c5d8bf;
+  background-color: var(--light-green);
   width: 100%;
 }
 
@@ -271,11 +296,11 @@ footer{
 }
 
 .main-nav-ul a:link{
-  color: #000e29;
+  color: var(--font-color);
 }
 
 .main-nav-ul a:visited{
-  color: #000e29;
+  color: var(--font-color);
 }
 
 /*Main*/
@@ -389,7 +414,7 @@ footer > details {
   }
 
   .current-page {
-    background-color: #b4c7af !important;
+    background-color: var(--middle-green) !important;
   }
 
   #introduction {
@@ -439,7 +464,7 @@ footer > details {
 
   a > button {
     width: auto;
-    background-color: #b4c7af;
+    background-color: var(--middle-green);
   }
 
   /*****Layout*****/
@@ -486,7 +511,7 @@ footer > details {
   /*Main Navigation*/
 
   .main-nav {
-    background-color: #b4c7af;
+    background-color: var(--middle-green);
     padding-top: .5rem;
     margin-bottom: 0;
   }
@@ -515,7 +540,7 @@ footer > details {
   main{
     margin: 0;
     padding: 1rem;
-    background-color: #dbdbda;
+    background-color: var(--main-background);
   }
 
   #introduction {

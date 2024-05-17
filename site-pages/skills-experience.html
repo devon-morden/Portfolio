@@ -15,6 +15,8 @@
     <symbol id="hamburger-svg" viewbox="0 0 448 512">
       <path d="M0 64H448v64H0V64zM0 224H448v64H0V224zM448 384v64H0V384H448z"/>
     </symbol>
+    <symbol id="up-chevron" viewBox="0 0 448 512"><!--!Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.--><path d="M224 114.7l22.6 22.6 160 160L429.3 320 384 365.3l-22.6-22.6L224 205.3 86.6 342.6 64 365.3 18.7 320l22.6-22.6 160-160L224 114.7z"/>
+    </symbol>
     <symbol id="long-up-arrow" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M203.3 11.3L192 0 180.7 11.3l-144 144L25.4 166.6 48 189.3l11.3-11.3L176 61.3V496v16h32V496 61.3L324.7 177.9 336 189.3l22.6-22.6-11.3-11.3-144-144z"/>
     </symbol>
     <symbol id="pdf" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -59,95 +61,206 @@
 
   <main>
 <!--add Git Flow experience. "I have some experience using gitflow for personal use, and formal training in its use with development teams. See cert. See also my github for my personal growth in this topic while building this site. I learned a lot while working with our website development team."-->
-    <h2 class="larger-screens">Skills and Experience</h2>
+    <h2 class="skills-experience-title">Skills and Experience</h2>
 
     <div class="experience">
-
-      <img class="experience-image" id="workflow" alt="A screenshot of a workflow chart" src="/assets/skills-experience/work-process-flow.png"/>
-      <p class="experience-text" id="project-management">
-        project management
-      </p>
-      <svg>
-        <use xlink:href="#long-up-arrow"/>
+      
+      <img class="experience-image" id="workflow" alt="A screenshot of a workflow chart" src="/assets/skills-experience/work-process-flow.webp"/>
+      <div class="experience-container">
+        <details>
+          <summary class="experience-title"><h3>Technical Project Management</h3></summary>
+          <h4>Experience</h4>
+          <ul class="experience-text" id="project-management-experience">
+            <li><h5>Merger</h5>
+              <ul class="experience-text-level-2">
+                <li>Strategic alignment</li>
+                <li>Systems analysis</li>
+                <li>Inter-organizational politics management</li>
+                <li>Broad technical acumen</li>
+              </ul>
+            </li>
+            <li><h5>Website, database, and back office systems migration</h5>
+              <ul class="experience-text-level-2">
+                <li>Business-continuity critical project</li>
+                <li>Tight delivery timeline: 5 months</li>
+                <li>Scope management</li>
+                <li>Flexible project management framework</li>
+                <li>Complex techinical dependencies</li>
+                <li>Complex multi-team communication management</li>
+                <li>Resource and budget management</li>
+                <li>Change management</li>
+                <li>Training development</li>
+              </ul>
+            </li>
+            <li><h5>Scoping for new website and back-office system</h5>
+              <ul class="experience-text-level-2">
+                <li>Project proposal</li>
+                <li>ROI analysis</li>
+                <li>Stakeholder buy-in</li>
+                <li>Scoping</li>
+              </ul>
+            </li>
+            <li><h5>Development of a new sales and consignment channel</h5>
+              <ul class="experience-text-level-2">
+                <li>Change management</li>
+                <li>Technical requirements and solution-finding</li>
+                <li>Project planning</li>
+                <li>Stakeholder input</li>
+                <li>Flexible project management</li>
+                <li>Tight turn-around: 4 months</li>
+              </ul>
+            </li>
+          </ul>
+          <h4>Education and Professional Development</h4>
+          <ul class="experience-text" id="project-management-education">
+            <li><abbr title="Certified Associate Project Manager">CAPM</abbr> - in progress </br>
+              Project Management Institute
+            </li>
+            <li><abbr title="Disciplined Agile Scrum Master">DASM</abbr> - in progress</br>
+              Project Management Institute
+            </li>
+            <li>E-Learning and Instructional Design</br>
+              Oregon State University (this instructor-lead certificate included significant training in project management)</li>
+            <li>Fundamentals of Project Planning and Management </br>
+              University of Virginia via Coursera</li>
+            <li>Project Management Foundations </br>
+              LinkedIn Learning
+            </li>
+            <li>Change Management </br>
+              LinkedIn Learning
+            </li>
+            <li>Project Management Foundations - Schedules </br>
+              LinkedIn Learning
+            </li>
+          </ul>
+        </details>
+      </div> 
+      <svg class="up-arrow">
+        <use xlink:href="#up-chevron"/>
       </svg>
 
-      <img class="experience-image" id="crawl-path" alt="A forced crawl path of our previous website generated by Screaming Frog demonstrating the SEO issues inherent to the site's design" src="/assets/skills-experience/spider-crawl-path.jpg"/>
-      <p class="experience-text" id="SEO-evaluation">
-        website SEO evaluation
-      </p>
-      <svg>
-        <use xlink:href="#long-up-arrow"/>
+      <img class="experience-image" id="crawl-path" alt="A forced crawl path of our previous website generated by Screaming Frog demonstrating the SEO issues inherent to the site's design" src="/assets/skills-experience/spider-crawl-path.webp"/>
+      <div class="experience-container">
+        <details>
+          <summary class="experience-title"><h3>Search Engine Optimization</h3></summary>
+          <p class="experience-text" id="SEO-evaluation">
+          website SEO evaluation
+          </p>
+        </details>
+      </div>
+      <svg class="up-arrow">
+        <use xlink:href="#up-chevron"/>
       </svg>
 
 
-      <img class="experience-image" id="html" alt="SEO friendly semantic and JavaScript independent html markup" src="#"/>
-      <p class="experience-text" id="web-dev">
-        web dev experience
-      </p>
-      <svg>
-        <use xlink:href="#long-up-arrow"/>
+      <img class="experience-image" id="html" alt="JavaScript with event listener" src="/assets/skills-experience/JavaScript-with-event-listener.webp"/>
+      <div class="experience-container">
+        <details>
+          <summary class="experience-title"><h3>Technical Acumen</h3></summary>
+          <p class="experience-text" id="web-dev">
+              web dev experience
+          </p>
+        </details>
+      </div>
+      <svg class="up-arrow">
+        <use xlink:href="#up-chevron"/>
       </svg>
 
 
       <!--UX design user story map-->
       
-      <img class="experience-image" id="instructional-design-img" alt="Gap analysis" src="/assets/skills-experience/needs-analysis"/>
-      <p class="experience-text" id="instructional-design">
-        instructional design
-      </p>
-      <svg>
-        <use xlink:href="#long-up-arrow"/>
+      <img class="experience-image" id="instructional-design-img" alt="Gap analysis" src="/assets/skills-experience/gap-analysis.webp"/>
+      <div class="experience-container">
+        <details>
+          <summary class="experience-title"><h3>Instructional and UX Design</h3></summary>
+          <p class="experience-text" id="instructional-design">
+            instructional design
+          </p>
+        </details>
+      </div>
+      <svg class="up-arrow">
+        <use xlink:href="#up-chevron"/>
       </svg>
 
-      <img class="experience-image" id="ad-campaign" alt="Google Ads visualization of correlation between quality conversions and campaign strategy" src="#"/>
-      <p class="experience-text" id="biddable-marketing">
-        biddable marketing
-      </p>
-      <svg>
-        <use xlink:href="#long-up-arrow"/>
+      <img class="experience-image" id="ad-campaign" alt="Google Ads visualization of correlation between quality conversions and campaign strategy" src="/assets/skills-experience/Google-analytics.webp"/>
+      <div class="experience-container">
+        <details>
+          <summary class="experience-title"><h3>Biddable Marketing</h3></summary>
+          <p class="experience-text" id="biddable-marketing">
+            biddable marketing
+          </p>
+        </details>
+      </div>
+      <svg class="up-arrow">
+        <use xlink:href="#up-chevron"/>
       </svg>
 
 
-      <img class="experience-image" id="followers" alt="a social media post" src="#"/>
-      <p class="experience-text" id="social-media">
-        social media
-      </p>
-      <svg>
-        <use xlink:href="#long-up-arrow"/>
+      <img class="experience-image" id="followers" alt="Instagram post" src="/assets/skills-experience/Instagram-post.webp"/>
+      <div class="experience-container">
+        <details>
+          <summary class="experience-title"><h3>Corporate Social Media</h3></summary>
+          <p class="experience-text" id="social-media">
+            social media
+          </p>
+        </details>
+      </div>
+      <svg class="up-arrow">
+        <use xlink:href="#up-chevron"/>
       </svg>
 
 
-      <img class="experience-image" id="design-img" alt="an example of graphic design work" src="#" />
-      <p class="experience-text" id="graphic-design">
-        graphic design
-      </p>
-      <svg>
-        <use xlink:href="#long-up-arrow"/>
+      <img class="experience-image" id="design-img" alt="an example of graphic design work" src="/assets/skills-experience/Logo.webp" />
+      <div class="experience-container">
+        <details>
+          <summary class="experience-title"><h3>Graphic Design</h3></summary>
+          <p class="experience-text" id="graphic-design">
+            graphic design
+          </p>
+        </details>
+      </div>
+      <svg class="up-arrow">
+        <use xlink:href="#up-chevron"/>
       </svg>
 
       
-      <img class="experience-image" id="diversity-img" alt="a diverse group of people" src="#"/>
-      <p class="experience-text" id="diversity">
-        diversity
-      </p>
-      <svg>
-        <use xlink:href="#long-up-arrow"/>
+      <img class="experience-image" id="diversity-img" alt="K-12 Diversity Curriculum" src="/assets/skills-experience/diversity-curriculum.webp"/>
+      <div class="experience-container">
+        <details>
+          <summary class="experience-title"><h3>Diversity Programming</h3></summary>
+          <p class="experience-text" id="diversity">
+            diversity
+          </p>
+        </details>
+      </div>
+      <svg class="up-arrow">
+        <use xlink:href="#up-chevron"/>
       </svg>
 
 
-      <img class="experience-image" id="curriculum-img" alt="Devon teaching a lesson" src="#"/>
-      <p class="experience-text" id="curriculum">
-        curriculum
-      </p>
-      <svg>
-        <use xlink:href="#long-up-arrow"/>
+      <img class="experience-image" id="curriculum-img" alt="Devon teaching a lesson" src="/assets/skills-experience/teaching.webp"/>
+      <div class="experience-container">
+        <details>
+          <summary class="experience-title"><h3>Curriculum Design & Teaching</h3></summary>
+          <p class="experience-text" id="curriculum">
+            curriculum
+          </p>
+        </details>
+      </div>
+      <svg class="up-arrow">
+        <use xlink:href="#up-chevron"/>
       </svg>
   
 
-      <img class="experience-image" id="cambridge-graduation" alt="MPhil graduation photo from the University of Cambridge" src="#"/>
-      <p class="experience-text" id="research">
-        research
-      </p>
+      <img class="experience-image" id="cambridge-graduation" alt="MPhil graduation photo from the University of Cambridge" src="/assets/skills-experience/Mphil-Graduation.webp"/>
+      <div class="experience-container">
+        <details>
+          <summary class="experience-title"><h3>Research</h3></summary>
+          <p class="experience-text" id="research">
+            research
+          </p>
+        </details>
+      </div>
     </div>
 
   </main>
